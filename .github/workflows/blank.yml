@@ -1,0 +1,12 @@
+name: example pipeline
+
+on:
+  push:
+    branches: [ develop ]
+
+jobs:
+  execute:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ver directorio
+        run: ls -l
